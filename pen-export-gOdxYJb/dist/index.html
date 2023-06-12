@@ -3,51 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - A Pen by 林鑫辰</title>
-  <link rel="stylesheet" href="./style.css">
+  
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<HTML>
-
-  <HEAD> <!----註：從這裡是抬頭部份的開始 ----->
-
-<TITLE>這是主題</TITLE> <!---註：這是網頁主題--->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">林鑫辰的網站</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">主頁
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     
-
-  </HEAD> <!----註：從這裡是抬頭部份的結束 ----->
-
-    <BODY> <!----註：從這裡是本文部份的開始 ----->
-
-
-
- <body> <font color="white" >我的第一個網頁
- 
-  <hr size="8" align="center" noshade width="90%" color="#E123456">
-  <H1 > <font color="white" > 1.嗨  你好</font></H>
-  <H5>2.....本文字</H5> 
-   
-  <p>3.<--註解、基本標籤   --></p>
-  <p>4.我代表1</p>
-  <p>5.我代表2</d>
-
-  <p align="center">6.我是3</p>
-  <p align="right">7.我是4</p>
-  <marquee scrollamount=33>我喜歡打籃球</marquee>
-  <hr size="20" align="center" noshade width="70%" color="#FF3B3B"  > 
-    <h1>-----進度3(期末專案)-----</h1> 
- <a href="https://replit.com/@Lin-Xin-Chen-19/Wang-Lu-Pa-Chong">新北市餐廳名稱 </a>
-    <h1>-----進度5(背景影片)-----</h1> 
-   <video class="video-back" autoplay loop muted> <source src="https://ryder0713
-.github.io/test./pen-export-gOdxYJb/dist/Gold Elegant Intro Youtube Video.mp4"> </video>
-   <script src="/script.js"></script>
-   <h1>-----進度6(計數功能)-----</h1>
-  <h2 id="counter" >0</h2>
-  <button onclick="increment()">請輕輕按下滑鼠左鍵
-  </body> 
-  </HTML>
+  <!------>
+    <br>
+   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-success">Success</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-info">Info</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-danger">Danger</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+  <!------>
+  <!------>
+  <!------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
 <!-- partial -->
-  <script  src="./script.js"></script>
-
+  
 </body>
 </html>
